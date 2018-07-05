@@ -87,7 +87,7 @@ export abstract class WizardStep {
    * Returns if this wizard step should be visible to the user.
    * If the step should be visible to the user false is returned, otherwise true
    */
-  @HostBinding('hidden')
+  @HostBinding('class.hidden')
   public get hidden(): boolean {
     return !this.selected;
   }
